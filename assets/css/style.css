@@ -1,0 +1,439 @@
+/* FONT LINK  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+/*
+Ich habe für Inspiration Seite das Video hinzugefügt aber autoplay property funktioniert nicht. Ich konnte nicht finden, woran das Problem liegt.
+*/
+
+/****************************************************************************
+                        DEFAULT CODES
+*****************************************************************************/
+
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
+  background-color: #2e2e2e;
+  color: rgb(115, 115, 115);
+  box-sizing: border-box;
+}
+
+/****************************************************************************
+                        HEADER TAG (FÜR ALLE HTML SEITE)
+*****************************************************************************/
+
+/************************************
+      OBEN SOCIAL MEDIA LINKS
+************************************/
+header>div {
+  position: fixed;
+  width: 90%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+header div ul {
+  list-style: none;
+  text-align: right;
+}
+header div ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+header div ul li a {
+  text-decoration: none;
+  color: rgb(115, 115, 115);
+  transition: all 0.7s;
+}
+header div ul li a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/************************************
+      VERTICAL NAVBAR
+************************************/
+
+aside {
+  position: fixed;
+  top: 200px;
+}
+
+aside nav ul {
+  list-style: none;
+  margin-top: 0;
+}
+aside nav ul li {
+  padding: 35px 20px;
+  position: relative;
+}
+
+aside nav ul li .circle{
+  position: absolute;
+  top: 35px;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgb(115, 115, 115,.60);
+  border-radius: 100%;
+}
+aside nav ul li .circle2{
+  position: absolute;
+  top: 30px;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+aside nav ul li .line{
+  position: absolute;
+  top: 65px;
+  left: -15px;
+  width: 1px;
+  background-color: rgb(115, 115, 115,.60);
+  height: 40px;
+  border: none;
+}
+
+aside nav ul li a {
+  text-decoration: none;
+  color: rgb(115, 115, 115);
+  transition: all 0.7s;
+}
+aside nav ul li a.active {
+  color: white;
+}
+aside nav ul li a:hover {
+  color: white;
+}
+
+/****************************************************************************
+                        HEADER TAG (FÜR ABOUT PAGE)
+*****************************************************************************/
+h2 {
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: #ebccc2;
+}
+header>h2 {
+  margin: 150px auto 100px;
+  width: 30%;
+}
+
+header h2+img {
+  display: block;
+  width: 92%;
+  margin: 50px auto;
+}
+
+/****************************************************************************
+                        MAIN TAG (FÜR ABOUT PAGE)
+*****************************************************************************/
+
+main#main-about article {
+  width: 70%;
+  margin: 150px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+}
+main#main-about article img {
+  width: 45%;
+}
+main#main-about article div {
+  width: 45%;
+}
+main#main-about article div h2 {
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: #ebccc2;
+}
+main#main-about article div p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 30px;
+  color: rgb(115, 115, 115);
+}
+
+/****************************************************************************
+                        HEADER TAG (FÜR LOUNGER PAGE)
+*****************************************************************************/
+
+header#lounger {
+  height:100vh;
+  background: url('../img/section-voyager.jpg') left no-repeat;
+  background-size: 50% 100vh;
+}
+header.one-screen-header section {
+  width: 40%;
+  margin-left: auto;
+  padding: 150px 40px 50px;
+}
+header.one-screen-header section h2 {
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: #ebccc2;
+}
+header.one-screen-header section p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 30px;
+  color: rgb(115, 115, 115);
+}
+
+
+
+/****************************************************************************
+                        HEADER TAG (FÜR EXPERIENCE PAGE)
+*****************************************************************************/
+
+header#experience {
+  height:100vh;
+  background: url('../img/section-experience-1.jpg') left no-repeat;
+  background-size: 50% 100vh;
+}
+
+/****************************************************************************
+                        HEADER TAG (FÜR INSPIRATION PAGE)
+*****************************************************************************/
+
+video {
+  display: block;
+  margin: 100px auto;
+  width: 65%;
+  outline: none;
+}
+
+/****************************************************************************
+                        MAIN TAG (FÜR INSPIRATION PAGE)
+*****************************************************************************/
+
+main#main-inspiration section {
+  width: 65%;
+  margin: 0 auto;
+}
+main#main-inspiration section:nth-of-type(1) {
+  width: 65%;
+  margin: 0 auto;
+}
+main#main-inspiration section:nth-of-type(2){
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main#main-inspiration section:nth-of-type(3){
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main#main-inspiration img {
+  width: 50%;
+}
+main#main-inspiration article{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+main#main-inspiration h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #ebccc2;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+main#main-inspiration p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 30px;
+  color: rgb(115, 115, 115);
+}
+
+main#main-inspiration section span {
+  border: 1px solid rgb(115, 115, 115);
+  padding: 5px 10px;
+}
+
+main#main-inspiration section:nth-of-type(2) p,main#main-inspiration section:nth-of-type(2) h2,main#main-inspiration section:nth-of-type(2) h3{
+  padding-left: 50px;
+  flex: 1 0 70%;
+}
+
+main#main-inspiration section:nth-of-type(3) p,main#main-inspiration section:nth-of-type(3) h2,main#main-inspiration section:nth-of-type(3) h3{
+  padding-right: 50px;
+  flex: 1 0 70%;
+}
+
+main#main-inspiration section:nth-of-type(3) {
+  margin-bottom: 100px;
+}
+
+/****************************************************************************
+                        HEADER TAG (FÜR SHOP PAGE)
+*****************************************************************************/
+
+header#shop {
+  height:100vh;
+  background: url('../img/section-composition4.jpg') left no-repeat;
+  background-size: 50% 100vh;
+}
+header#shop section {
+  padding-top: 85px;
+}
+header#shop section img{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+header#shop p,header#shop h2{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+header#shop p:nth-of-type(1){
+  margin-bottom: 20px;
+}
+header#shop p a {
+  text-decoration: none;
+  color: rgb(115, 115, 115);
+  background-color: #ebccc2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: .6rem;
+}
+
+/****************************************************************************
+                        MEDIA QUERIES
+*****************************************************************************/
+
+@media (max-width: 768px) {
+  /****************************************************************************
+                        ABOUT PAGE
+*****************************************************************************/
+  header>h2 {
+    width: 80%;
+  }
+  main#main-about article {
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  main#main-about article img {
+    width: 100%;
+  }
+  main#main-about article div {
+    width: 100%;
+  }
+  main#main-about article div h2 {
+    text-align: center;
+  }
+  main#main-about article div p {
+    text-align: center;
+  }
+  /****************************************************************************
+                       LOUNGER PAGE
+  *****************************************************************************/
+  header#lounger {
+    background: url('../img/section-voyager.jpg') center/cover no-repeat;
+    background-size: 100% 100vh;
+  }
+  header.one-screen-header section {
+    width: 70%;
+    margin: 0px auto;
+    padding: 100px 20px 50px 150px;
+  }
+  header.one-screen-header section h2 {
+    text-align: right;
+    color: beige;
+  }
+  header.one-screen-header section p {
+    text-align: right;
+    color: beige;
+  }
+  /****************************************************************************
+                       EXPERIENCE PAGE
+  *****************************************************************************/
+  header#experience {
+    background: url('../img/section-experience-1.jpg') center/cover no-repeat;
+    background-size: 100% 100vh;
+  }
+  header#experience section {
+    padding-top: 50;
+  }
+  /****************************************************************************
+                       INSPIRATION PAGE
+  *****************************************************************************/
+  video {
+    margin: 100px 20px 100px auto;
+    width: 75%;
+  }
+  main#main-inspiration section {
+    width: 80%;
+    margin: 0;
+    margin-left: auto;
+  }
+  main#main-inspiration section:nth-of-type(1) {
+    width: 70%;
+    margin: 0;
+    margin-left: auto;
+    text-align: right;
+    padding-right: 20px;
+  }
+  main#main-inspiration section:nth-of-type(2){
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-bottom: 100px;
+  }
+  main#main-inspiration section:nth-of-type(3){
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+  main#main-inspiration img {
+    width: 80%;
+    order: 0;
+  }
+  main#main-inspiration article{
+    justify-content: flex-end;
+    width: 80%;
+    order: 1;
+  }
+  main#main-inspiration h3 {
+    text-align: right;
+  }
+  main#main-inspiration p {
+    text-align: right;
+  }
+
+  main#main-inspiration section:nth-of-type(2) p,main#main-inspiration section:nth-of-type(2) h2,main#main-inspiration section:nth-of-type(2) h3{
+    text-align: right;
+  }
+
+  main#main-inspiration section:nth-of-type(3) p,main#main-inspiration section:nth-of-type(3) h2,main#main-inspiration section:nth-of-type(3) h3{
+    text-align: right;
+    padding-right: 0px;
+  }
+  /****************************************************************************
+                       SHOP PAGE
+  *****************************************************************************/
+  header#shop {
+    background: url('../img/section-composition4.jpg') center/cover no-repeat;
+    background-size: 100% 100vh;
+  }
+  header#shop section {
+    width: 80%;
+    margin: 0px 0px 50px 100px;
+    padding: 0;
+    padding-top: 100px;
+  }
+  header#shop section img{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
